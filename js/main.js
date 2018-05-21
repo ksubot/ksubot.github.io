@@ -71,10 +71,6 @@ jQuery(document).ready(function($){
 	function showProductIntro() {
 		$('header').removeClass('slide-down');
 		$('.cd-main-content').removeClass('is-product-tour');
-		$('.cd-active').find('video').get(0).pause();
-		$('.cd-single-item').find('video').each(function(){
-			$(this).get(0).currentTime = 0;
-		});
 	}
 
 	function updateSlider(active, direction) {
